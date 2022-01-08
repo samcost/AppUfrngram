@@ -30,7 +30,7 @@ export default function LoginScreen({navigation}) {
       await AsyncStorage.setItem('token', token);
       /*console.log('TOKEN:'+token)*/
       /*const token = await AsyncStorage.getItem('token'); --para usar o token de autenticação em outra tela do app--*/
-      navigation.navigate('HomeScreen');
+      navigation.navigate('LoggedTabNavigator');
     } else {
       Alert.alert(
         'Erro',
